@@ -24,6 +24,7 @@ from option_pricing.black_scholes import price as bs_price  # noqa: E402
 
 BINOMIAL_STEPS = 1000
 SOURCE = "KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)"
+HULL_CH15 = "Hull, Options, Futures and Other Derivatives, 9th ed., Chapter 15"
 
 # Each entry: name, inputs, option type, published price, and the published value's rounding.
 EXAMPLES = [
@@ -54,6 +55,34 @@ EXAMPLES = [
         "K": 95.0, "T": 0.75, "r": 0.08, "sigma": 0.30,
         "option": "call", "published": 14.392, "rounding": 0.0005,
     },
+    # Hull, Options, Futures and Other Derivatives (9th ed.), Chapter 15, Example 15.6.
+    {
+        "name": "Hull Example 15.6: call",
+        "S": 42.0, "K": 40.0, "T": 0.5, "r": 0.10, "sigma": 0.20,
+        "option": "call", "published": 4.76, "rounding": 0.005,
+        "source": HULL_CH15,
+    },
+    {
+        "name": "Hull Example 15.6: put",
+        "S": 42.0, "K": 40.0, "T": 0.5, "r": 0.10, "sigma": 0.20,
+        "option": "put", "published": 0.81, "rounding": 0.005,
+        "source": HULL_CH15,
+    },
+    # Hull Chapter 15, Example 15.7 (the value of a five-year European call used in a warrant example).
+    {
+        "name": "Hull Example 15.7: 5-year call",
+        "S": 40.0, "K": 60.0, "T": 5.0, "r": 0.03, "sigma": 0.30,
+        "option": "call", "published": 7.04, "rounding": 0.005,
+        "source": HULL_CH15,
+    },
+    # Hull Chapter 15, implied volatility section: a call priced at 1.875 has implied volatility 0.235.
+    # The volatility is published to 3 decimals; vega * 0.0005 is the price uncertainty from that rounding.
+    {
+        "name": "Hull implied volatility example: call",
+        "S": 21.0, "K": 20.0, "T": 0.25, "r": 0.10, "sigma": 0.235,
+        "option": "call", "published": 1.875, "rounding": 0.0017,
+        "source": HULL_CH15,
+    },
 ]
 
 
@@ -75,7 +104,7 @@ def run():
                 "rel_error": abs_err / published,
                 "rounding_tolerance": ex["rounding"],
                 "within_rounding": abs_err <= ex["rounding"] + 1e-9,
-                "source": SOURCE,
+                "source": ex.get("source", SOURCE),
             })
     return rows
 

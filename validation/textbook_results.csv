@@ -7,3 +7,11 @@ Problem 4.1b: call (dividend absorbed),Black-Scholes,14.392,14.386304420064405,0
 Problem 4.1b: call (dividend absorbed),Binomial (1000 steps),14.392,14.388296616836612,0.0037033831633870307,0.00025732234320365694,0.0005,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)
 Problem 4.2b: call (forward price),Black-Scholes,14.392,14.385534533264853,0.006465466735146919,0.0004492403234537881,0.0005,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)
 Problem 4.2b: call (forward price),Binomial (1000 steps),14.392,14.386561471937172,0.005438528062827075,0.0003778854963053832,0.0005,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)
+Hull Example 15.6: call,Black-Scholes,4.76,4.759422392871528,0.0005776071284717688,0.00012134603539322874,0.005,True,"Hull, Options, Futures and Other Derivatives, 9th ed., Chapter 15"
+Hull Example 15.6: call,Binomial (1000 steps),4.76,4.7598172852762906,0.00018271472370923192,3.8385446157401665e-05,0.005,True,"Hull, Options, Futures and Other Derivatives, 9th ed., Chapter 15"
+Hull Example 15.6: put,Black-Scholes,0.81,0.8085993729000958,0.0014006270999042947,0.0017291692591411044,0.005,True,"Hull, Options, Futures and Other Derivatives, 9th ed., Chapter 15"
+Hull Example 15.6: put,Binomial (1000 steps),0.81,0.8089942653039145,0.0010057346960855584,0.0012416477729451337,0.005,True,"Hull, Options, Futures and Other Derivatives, 9th ed., Chapter 15"
+Hull Example 15.7: 5-year call,Black-Scholes,7.04,7.040239234639772,0.00023923463977215675,3.398219314945409e-05,0.005,True,"Hull, Options, Futures and Other Derivatives, 9th ed., Chapter 15"
+Hull Example 15.7: 5-year call,Binomial (1000 steps),7.04,7.042048334929283,0.0020483349292828024,0.00029095666609130715,0.005,True,"Hull, Options, Futures and Other Derivatives, 9th ed., Chapter 15"
+Hull implied volatility example: call,Black-Scholes,1.875,1.876611076256804,0.0016110762568040116,0.0008592406702954728,0.0017,True,"Hull, Options, Futures and Other Derivatives, 9th ed., Chapter 15"
+Hull implied volatility example: call,Binomial (1000 steps),1.875,1.8767907482794106,0.0017907482794106144,0.0009550657490189943,0.0017,False,"Hull, Options, Futures and Other Derivatives, 9th ed., Chapter 15"

@@ -1,0 +1,9 @@
+example,method,published,computed,abs_error,rel_error,rounding_tolerance,within_rounding,source
+Problem 1.1: call,Black-Scholes,5.0543,5.057386759734403,0.0030867597344030884,0.0006107195327548996,5e-05,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)
+Problem 1.1: call,Binomial (1000 steps),5.0543,5.057314870164878,0.003014870164878225,0.0005964960854872535,5e-05,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)
+Problem 1.2: put,Black-Scholes,6.402,6.401407649076464,0.0005923509235357116,9.25259174532508e-05,5e-05,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)
+Problem 1.2: put,Binomial (1000 steps),6.402,6.400690376015185,0.0013096239848149338,0.00020456482112073316,5e-05,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)
+Problem 4.1b: call (dividend absorbed),Black-Scholes,14.392,14.386304420064405,0.005695579935593997,0.0003957462434403834,0.0005,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)
+Problem 4.1b: call (dividend absorbed),Binomial (1000 steps),14.392,14.388296616836612,0.0037033831633870307,0.00025732234320365694,0.0005,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)
+Problem 4.2b: call (forward price),Black-Scholes,14.392,14.385534533264853,0.006465466735146919,0.0004492403234537881,0.0005,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)
+Problem 4.2b: call (forward price),Binomial (1000 steps),14.392,14.386561471937172,0.005438528062827075,0.0003778854963053832,0.0005,False,KSU homework solutions (sol_hw_4_actu_468_ctm-bsf1.pdf)

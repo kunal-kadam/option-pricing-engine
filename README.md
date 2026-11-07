@@ -132,4 +132,4 @@ docs/                   method notes and correctness checks
 
 ## License
 
-To be added before publication.
+MIT. See [LICENSE](LICENSE).
